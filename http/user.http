@@ -1,0 +1,32 @@
+### 모든 사용자 조회
+GET http://localhost:8080/users
+Content-Type: application/json
+
+### ID로 사용자 조회
+GET http://localhost:8080/users/1
+Content-Type: application/json
+
+### 이메일로 사용자 조회
+GET http://localhost:8080/users/search?user_email=john.doe@example.com
+Content-Type: application/json
+
+### 사용자 생성
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "user_name": "John Doe",
+  "user_email": "john.doe@example.com"
+}
+
+### 커서 기반 페이지네이션 사용자 조회 (첫 페이지)
+GET http://localhost:8080/users/cursor?size=10
+Content-Type: application/json
+
+### 커서 기반 페이지네이션 사용자 조회 (다음 페이지)
+GET http://localhost:8080/users/cursor?lastUserId=10&size=10
+Content-Type: application/json
+
+### 특정 사용자 정보와 작성한 포스트 조회
+GET http://localhost:8080/users/1/posts
+Content-Type: application/json

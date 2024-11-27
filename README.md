@@ -1,0 +1,7 @@
+# SPRINGBOOT-KOTLIN-EXPOSED-PROJECT
+
+## TECH-STACK
+- Kotlin
+- JDK 17
+- Spring Boot 3.4.0
+- Exposed

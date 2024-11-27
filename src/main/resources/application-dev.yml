@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/skep_dev
+    username: skep_user_dev
+    password: 1111

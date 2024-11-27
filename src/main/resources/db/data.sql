@@ -1,0 +1,83 @@
+-- Users 데이터 삽입
+INSERT INTO users (user_name, user_email, created_at, updated_at)
+VALUES
+    ('User1', 'user1@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User2', 'user2@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User3', 'user3@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User4', 'user4@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User5', 'user5@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User6', 'user6@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User7', 'user7@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User8', 'user8@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User9', 'user9@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User10', 'user10@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User11', 'user11@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User12', 'user12@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User13', 'user13@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User14', 'user14@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User15', 'user15@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User16', 'user16@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User17', 'user17@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User18', 'user18@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User19', 'user19@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User20', 'user20@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User21', 'user21@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User22', 'user22@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User23', 'user23@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User24', 'user24@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User25', 'user25@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User26', 'user26@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User27', 'user27@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User28', 'user28@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User29', 'user29@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User30', 'user30@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User31', 'user31@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User32', 'user32@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User33', 'user33@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User34', 'user34@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User35', 'user35@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User36', 'user36@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User37', 'user37@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User38', 'user38@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User39', 'user39@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User40', 'user40@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User41', 'user41@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User42', 'user42@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User43', 'user43@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User44', 'user44@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User45', 'user45@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User46', 'user46@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User47', 'user47@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User48', 'user48@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User49', 'user49@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('User50', 'user50@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Posts 데이터 삽입
+INSERT INTO posts (user_id, title, content, created_at, updated_at)
+VALUES
+    (1, 'Title 1-1', 'Content for User1 Post 1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (1, 'Title 1-2', 'Content for User1 Post 2', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (1, 'Title 1-3', 'Content for User1 Post 3', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (1, 'Title 1-4', 'Content for User1 Post 4', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+    (2, 'Title 2-1', 'Content for User2 Post 1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (2, 'Title 2-2', 'Content for User2 Post 2', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (2, 'Title 2-3', 'Content for User2 Post 3', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (2, 'Title 2-4', 'Content for User2 Post 4', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+    (3, 'Title 3-1', 'Content for User3 Post 1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (3, 'Title 3-2', 'Content for User3 Post 2', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (3, 'Title 3-3', 'Content for User3 Post 3', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (3, 'Title 3-4', 'Content for User3 Post 4', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+    (4, 'Title 4-1', 'Content for User4 Post 1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (4, 'Title 4-2', 'Content for User4 Post 2', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (4, 'Title 4-3', 'Content for User4 Post 3', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (4, 'Title 4-4', 'Content for User4 Post 4', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+-- ... 반복해서 각 User마다 4개의 Post 생성 ...
+
+    (50, 'Title 50-1', 'Content for User50 Post 1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (50, 'Title 50-2', 'Content for User50 Post 2', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (50, 'Title 50-3', 'Content for User50 Post 3', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    (50, 'Title 50-4', 'Content for User50 Post 4', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
