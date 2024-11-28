@@ -31,17 +31,13 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.springframework.boot:spring-boot-starter-validation")
-
-
     implementation("org.jetbrains.exposed:exposed-core:0.49.0")
     implementation("org.jetbrains.exposed:exposed-dao:0.49.0")
     implementation("org.jetbrains.exposed:exposed-jdbc:0.49.0")
     implementation("org.jetbrains.exposed:exposed-java-time:0.49.0")
     implementation("org.jetbrains.exposed:exposed-spring-boot-starter:0.49.0")
     implementation("org.jetbrains.exposed:exposed-java-time:0.49.0")
-
     implementation("org.postgresql:postgresql:42.7.2")
-
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 
