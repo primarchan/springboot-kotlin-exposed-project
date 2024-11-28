@@ -30,3 +30,7 @@ Content-Type: application/json
 ### 특정 사용자 정보와 작성한 포스트 조회
 GET http://localhost:8080/users/1/posts
 Content-Type: application/json
+
+### 특정 사용자 정보와 작성한 게시물 조회 (Join Query)
+GET http://localhost:8080/users/1/posts-join
+Content-Type: application/json

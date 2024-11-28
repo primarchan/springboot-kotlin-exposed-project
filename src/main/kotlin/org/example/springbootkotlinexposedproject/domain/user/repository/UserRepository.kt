@@ -1,10 +1,17 @@
 package org.example.springbootkotlinexposedproject.domain.user.repository
 
+import org.example.springbootkotlinexposedproject.domain.post.mapper.toPostDomain
 import org.jetbrains.exposed.sql.*
 import org.springframework.stereotype.Repository
 import org.jetbrains.exposed.sql.transactions.transaction
 import org.jetbrains.exposed.sql.statements.InsertStatement
 import org.example.springbootkotlinexposedproject.domain.user.table.User
+import org.example.springbootkotlinexposedproject.domain.post.table.Post
+import org.example.springbootkotlinexposedproject.domain.user.exception.UserErrorCode
+import org.example.springbootkotlinexposedproject.domain.user.exception.UserServiceException
+import org.example.springbootkotlinexposedproject.domain.user.mapper.toUserDomain
+import org.example.springbootkotlinexposedproject.domain.user.mapper.toUserWithPostsDomain
+import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 
 @Repository
 class UserRepository {
@@ -53,10 +60,18 @@ class UserRepository {
                 .limit(size)
                 .toList()
 
-            else -> User.select { User.id greater lastUserId }
+            else -> User.selectAll()
+                .where { User.id greater lastUserId }
                 .orderBy(User.id, SortOrder.ASC)
                 .limit(size)
                 .toList()
         }
+    }
+
+    fun findUserWithPostsByUserIdUsingJoin(userId: Long): List<ResultRow> = transaction {
+        (User innerJoin Post)
+            .selectAll()
+            .where { User.id eq userId }
+            .toList()
     }
 }
