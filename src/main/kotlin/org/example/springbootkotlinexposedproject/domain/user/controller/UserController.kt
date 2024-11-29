@@ -1,5 +1,6 @@
 package org.example.springbootkotlinexposedproject.domain.user.controller
 
+import io.swagger.v3.oas.annotations.tags.Tag
 import jakarta.validation.constraints.Min
 import org.springframework.web.bind.annotation.*
 import org.example.springbootkotlinexposedproject.common.dto.ApiResponse
@@ -11,6 +12,7 @@ import org.example.springbootkotlinexposedproject.domain.user.dto.UserWithPostsR
 import org.example.springbootkotlinexposedproject.common.annotation.EnableRequestLogging
 import org.example.springbootkotlinexposedproject.domain.user.mapper.toUserWithPostsResponse
 
+@Tag(name = "User Doamin APIs", description = "사용자 도메인 관련 API")
 @RestController
 @RequestMapping("/users")
 @EnableRequestLogging

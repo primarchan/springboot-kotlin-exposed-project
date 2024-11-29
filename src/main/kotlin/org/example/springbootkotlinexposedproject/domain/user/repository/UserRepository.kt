@@ -1,17 +1,11 @@
 package org.example.springbootkotlinexposedproject.domain.user.repository
 
-import org.example.springbootkotlinexposedproject.domain.post.mapper.toPostDomain
 import org.jetbrains.exposed.sql.*
 import org.springframework.stereotype.Repository
 import org.jetbrains.exposed.sql.transactions.transaction
 import org.jetbrains.exposed.sql.statements.InsertStatement
 import org.example.springbootkotlinexposedproject.domain.user.table.User
 import org.example.springbootkotlinexposedproject.domain.post.table.Post
-import org.example.springbootkotlinexposedproject.domain.user.exception.UserErrorCode
-import org.example.springbootkotlinexposedproject.domain.user.exception.UserServiceException
-import org.example.springbootkotlinexposedproject.domain.user.mapper.toUserDomain
-import org.example.springbootkotlinexposedproject.domain.user.mapper.toUserWithPostsDomain
-import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 
 @Repository
 class UserRepository {

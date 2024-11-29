@@ -1,7 +1,7 @@
 plugins {
     kotlin("jvm") version "1.9.25"
     kotlin("plugin.spring") version "1.9.25"
-    id("org.springframework.boot") version "3.4.0"
+    id("org.springframework.boot") version "3.3.0"
     id("io.spring.dependency-management") version "1.1.6"
     kotlin("plugin.jpa") version "1.9.25"
 }
@@ -38,6 +38,7 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-spring-boot-starter:0.49.0")
     implementation("org.jetbrains.exposed:exposed-java-time:0.49.0")
     implementation("org.postgresql:postgresql:42.7.2")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 

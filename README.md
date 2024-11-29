@@ -17,13 +17,14 @@ Spring Boot, Kotlin, Exposed를 기반으로 한 표준 API 프로젝트
 
 ## 주요 기술 스택
 
-| **기술/도구** | **버전**               | **설명**                                |
-|---------------|-----------------------|----------------------------------------|
-| Kotlin        | 1.9.25               | 현대적이고 간결한 프로그래밍 언어.      |
-| JDK           | 17                   | 프로젝트의 런타임 환경.                |
-| Spring Boot   | 3.4.0                | Spring Framework 기반의 서버 개발 플랫폼.|
-| Exposed       | 0.49.0               | Kotlin 기반 ORM 라이브러리.            |
-| PostgreSQL    | 42.7.2               | 관계형 데이터베이스.                    |
+| **기술/도구** | **버전** | **설명**                                |
+|---------------|--------|----------------------------------------|
+| Kotlin        | 1.9.25 | 현대적이고 간결한 프로그래밍 언어.      |
+| JDK           | 17     | 프로젝트의 런타임 환경.                |
+| Spring Boot   | 3.3.0  | Spring Framework 기반의 서버 개발 플랫폼.|
+| Exposed       | 0.49.0 | Kotlin 기반 ORM 라이브러리.            |
+| PostgreSQL    | 42.7.2 | 관계형 데이터베이스.                    |
+| SpringDoc OpenAPI | 2.2.0 | Swagger 기반 API 문서화 라이브러리.   |
 
 ---
 
@@ -48,6 +49,10 @@ Spring Boot, Kotlin, Exposed를 기반으로 한 표준 API 프로젝트
 - Join 쿼리 및 개별 조회를 활용한 데이터 처리.
 - Domain 및 Response DTO 간 명확한 책임 분리.
 
+### 6. Swagger 기반 API 문서화
+- **SpringDoc OpenAPI**를 활용하여 Swagger UI를 통한 API 문서 제공.
+- OpenAPI 명세를 기반으로 API 테스트 및 탐색 가능.
+
 ---
 
 ## 주요 의존성
@@ -58,6 +63,7 @@ Spring Boot, Kotlin, Exposed를 기반으로 한 표준 API 프로젝트
 - **Spring Boot Validation**: 데이터 유효성 검증.
 - **Exposed Core/DAO/JDBC**: 데이터베이스와의 효율적인 상호작용.
 - **PostgreSQL Driver**: PostgreSQL 데이터베이스와의 연결 지원.
+- **SpringDoc OpenAPI**: Swagger 기반 API 문서화 지원.
 
 ### 개발용 의존성
 - **Spring Boot DevTools**: 코드 변경 시 빠른 리로딩 지원.
@@ -75,6 +81,10 @@ Spring Boot, Kotlin, Exposed를 기반으로 한 표준 API 프로젝트
 
 ### 3. 애노테이션 처리
 - Jakarta Persistence와 호환을 위해 `@Entity`, `@MappedSuperclass`, `@Embeddable` 애노테이션을 열어둠.
+
+### 4. OpenAPI 설정
+- **OpenApiConfig** 파일에서 프로젝트 정보(title, description, contact 등)를 명세화.
+- API 서버 환경(local, production) 정의.
 
 ---
 
