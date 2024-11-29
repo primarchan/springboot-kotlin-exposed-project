@@ -10,11 +10,12 @@ import org.example.springbootkotlinexposedproject.domain.user.service.UserServic
 import org.example.springbootkotlinexposedproject.domain.user.mapper.toUserResponse
 import org.example.springbootkotlinexposedproject.domain.user.dto.UserWithPostsResponse
 import org.example.springbootkotlinexposedproject.common.annotation.EnableRequestLogging
+import org.example.springbootkotlinexposedproject.common.constants.ApiVersion
 import org.example.springbootkotlinexposedproject.domain.user.mapper.toUserWithPostsResponse
 
-@Tag(name = "User Doamin APIs", description = "사용자 도메인 관련 API")
+@Tag(name = "User Domain APIs", description = "사용자 도메인 관련 API")
 @RestController
-@RequestMapping("/users")
+@RequestMapping("${ApiVersion.V1}/users")
 @EnableRequestLogging
 class UserController(private val userService: UserService) {
 
